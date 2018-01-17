@@ -2,7 +2,7 @@
 
 WSA Internal HTML5 Coding Standards Guide
 
-> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA internal projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic knowledge of Front-End technologies and Responsive Web Design.
+> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic knowledge of Front-End technologies and Responsive Web Design.
 
 
 Other Style Guides
@@ -18,15 +18,32 @@ Other Style Guides
 #### Structure your document properly:
 * Use HTML5 semantic block level elements to define areas of your website
 
+#### DOCTYPE Declaration
+In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
+The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
 
 ```html
 <!DOCTYPE html>
-<html>
+```
+
+##### References
+> * [W3C - HTML5 Reference](https://dev.w3.org/html5/html-author/)
+> * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
+> * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<!-- Document metadata / CSS external links / favicons -->
+
+		<!-- Character encoding for the document -->
+		<meta charset="utf-8">
 
 		<!-- Document Title -->
 		<title>Eg. Today's feed | The Feeder</title>
+
+		<!-- Document metadata / CSS external links / favicons -->
 
 	</head>
 	<body>
@@ -74,11 +91,11 @@ Other Style Guides
 			(it can be nested if directly related to the main content.
 			If not, leave it outside the main content) -->
 			<aside>
-				<h2>Eg. Upcaming events</h2>
+				<h2>Eg. Upcaming News</h2>
 				<ul>
-					<li><a href="#">Eg. Event 1</a></li>
-					<li><a href="#">Eg. Event 2</a></li>
-					<li><a href="#">Eg. Event 3</a></li>
+					<li><a href="#">Eg. News 1</a></li>
+					<li><a href="#">Eg. News 2</a></li>
+					<li><a href="#">Eg. News 3</a></li>
 				</ul>
 			</aside>
 
