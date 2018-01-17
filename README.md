@@ -103,7 +103,7 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 <!-- Case insensitive -->
 <!DOCTYPE html>
 
-<!-- lowercase is valid -->
+<!-- Lowercase is valid -->
 <!doctype html>
 ```
 > **Note**: The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
@@ -112,6 +112,23 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 > * [W3C - HTML5 Reference](https://dev.w3.org/html5/html-author/)
 > * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
 > * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
+
+#### HTML Element
+The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+
+```html
+<!-- Eg. html with dir global attribute -->
+<html dir="rtl">
+	<head>
+	</head>
+	<body>
+	</body>
+</html>
+```
+> **Note** This element includes the global attributes.
+##### References
+> * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+> * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
 ### Prerequisites
 
