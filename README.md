@@ -31,11 +31,7 @@ Structure your document using HTML5 semantic block level elements to define area
 
 		<!-- Document main header used across all website pages -->
 		<header>
-			<p>
-				<a href="/home">
-					<img src="/images/eg-news-feeder-150x60.jpg" width="150" height="60" alt="Eg. News Feeder">Eg. News Feeder
-				</a>
-			</p>
+			<!-- Eg. logo of website here -->
 
 			<nav>
 				<li><a href="#">about</a></li>
