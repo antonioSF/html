@@ -45,8 +45,9 @@ Other Style Guides
 		<!-- Page main content -->
 		<main role="main">
 
-			<!-- It contains a thematic grouping of content section with main heading -->
+			<!-- A section contains a thematic grouping of content with a heading -->
 			<section>
+				<!-- Main page Heading -->
 				<h1>Eg. Your news feed aggregator page</h1>
 			</section>
 			
@@ -69,11 +70,11 @@ Other Style Guides
 
 			</section>
 
-			<!-- The aside is complementary to the document's content 
+			<!-- The aside is complementary/related to the document's content 
 			(it can be nested if directly related to the main content.
 			If not, leave it outside the main content) -->
 			<aside>
-				<h2>Eg. Related content Title / Upcaming events</h2>
+				<h2>Eg. Upcaming events</h2>
 				<ul>
 					<li><a href="#">Eg. Event 1</a></li>
 					<li><a href="#">Eg. Event 2</a></li>
