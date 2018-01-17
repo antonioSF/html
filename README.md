@@ -73,10 +73,10 @@ Structure your document using HTML5 semantic block level elements to define area
 			<aside>
 				<h2>Eg. Related content Title / Upcaming events</h2>
 				<ul>
-					<li><a href="#">E.g. Event 1</a></li>
-					<li><a href="#">E.g. Event 2</a></li>
-					<li><a href="#">E.g. Event 3</a></li>
-		        </ul>
+					<li><a href="#">Eg. Event 1</a></li>
+					<li><a href="#">Eg. Event 2</a></li>
+					<li><a href="#">Eg. Event 3</a></li>
+				</ul>
 			</aside>
 
 		</main>
