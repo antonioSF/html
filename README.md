@@ -12,7 +12,7 @@ Other Style Guides
   - [Environment / Scaffolding / Bundles / deployments](https://github.com/antonioSF)
 
 ## Table of Contents
-1. [Document & website structure](#document-and-website-structure)
+1. [Document & website structure](#document--website-structure)
 
 ## Document & website structure
 #### Structure your document properly:
