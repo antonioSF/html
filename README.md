@@ -117,7 +117,7 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
 
 ```html
-<!-- Eg. html with dir global attribute -->
+<!-- html with dir global attribute -->
 <html dir="rtl">
 	<head>
 	</head>
@@ -130,61 +130,43 @@ The HTML <html> element represents the root (top-level element) of an HTML docum
 > * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
-### Prerequisites
+#### <head> (header) element
+The HTML <head> element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
 
-What things you need to install the software and how to install them
+```html
+<!-- <head> with title and required metadata -->
+<head>
+		<!-- Character encoding for the document -->
+		<meta charset="utf-8">
 
+		<!-- Instruct IE to use its latest rendering engine -->
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- Viewport for responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		
+		<!-- Document Title -->
+		<title>Page title less than 55 characters</title>
+		
+		<!-- Description of the page -->
+		<meta name="description" content="description of the web page less than 150 characters">
+
+		<!-- Favicon (put the favicons on the root of the folder) -->
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<!-- for IE -->
+		<!--[if IE]>
+			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<![endif]-->
+
+		<!-- CSS link to file (all CSS files are loaded in respective order) -->
+		<link rel="stylesheet" href="/styles/main.css">
+		<link rel="stylesheet" href="/styles/mediaqueries.css">
+		
+</head>
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+> **Note** This element includes the global attributes.
+##### References
+> * [MDN web docs - <head>: The Document Metadata (Header) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
 
 ## Contributing
 
