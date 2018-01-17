@@ -11,6 +11,90 @@ Other Style Guides
   - [JavaScript](https://github.com/antonioSF)
   - [Environment / Scaffolding / Bundles / deployments](https://github.com/antonioSF)
 
+## Table of Contents
+1. [Document & website structure](#document-and-website-structure)
+
+## Document & website structure
+Structure your document using HTML5 semantic block level elements to define areas of your website
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Document metadata / CSS external links / favicons -->
+
+		<!-- Document Title -->
+		<title>Eg. Today's feed | The Feeder</title>
+
+	</head>
+	<body>
+
+		<!-- Document main header used across all website pages -->
+		<header>
+			<p>
+				<a href="/home">
+					<img src="/images/eg-news-feeder-150x60.jpg" width="150" height="60" alt="Eg. News Feeder">Eg. News Feeder
+				</a>
+			</p>
+
+			<nav>
+				<li><a href="#">about</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">contacts</a></li>
+			</nav>
+		</header>
+		
+		<!-- Page main content -->
+		<main role="main">
+
+			<!-- It contains a thematic grouping of content section with main heading -->
+			<section>
+				<h1>Eg. Your news feed aggregator page</h1>
+			</section>
+			
+			<!-- Another example of a section -->
+			<section>
+				<!-- The section always contains a heading -->
+				<h2>Eg. News Feed For today</h2>
+
+				<!-- An article containing related individual standalone pieces of content  -->
+				<article>
+					<h2>Eg. 10 things you didn't knew about HTML</h2>
+					<p>Lorem ipsum dolor sit amet...</p>
+				</article>
+
+				<!-- Another example of an article -->
+				<article>
+					<h2>Eg. 10 things you didn't knew about CSS</h2>
+					<p>Lorem ipsum dolor sit amet...</p>
+				</article>
+
+			</section>
+
+			<!-- The aside is complementary to the document's content 
+			(it can be nested if directly related to the main content.
+			If not, leave it outside the main content) -->
+			<aside>
+				<h2>Eg. Related content Title / Upcaming events</h2>
+				<ul>
+					<li><a href="#">E.g. Event 1</a></li>
+					<li><a href="#">E.g. Event 2</a></li>
+					<li><a href="#">E.g. Event 3</a></li>
+		        </ul>
+			</aside>
+
+		</main>
+
+		<!-- Document main footer used across all website pages -->
+		<footer>
+			<p>&copy; Copyright 2018. All rights reversed.</p>
+		</footer>
+
+		<!-- JavaScript files -->
+	</body>
+</html>
+```
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
