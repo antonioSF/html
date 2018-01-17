@@ -17,7 +17,7 @@ Other Style Guides
 ## Document & website structure
 Structure your document using HTML5 semantic block level elements to define areas of your website
 
-```
+```html
 <!DOCTYPE html>
 <html>
 	<head>
