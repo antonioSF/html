@@ -130,8 +130,8 @@ The HTML <html> element represents the root (top-level element) of an HTML docum
 > * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
-#### <head> (header) element
-The HEAD element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
+#### HEAD (header) element
+The HEAD element provides general information (metadata) about the document.
 
 ```html
 <!-- <head> with title and required metadata -->
@@ -158,9 +158,8 @@ The HEAD element provides general information (metadata) about the document, inc
 			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 		<![endif]-->
 
-		<!-- CSS link to file (all CSS files are loaded in respective order) -->
+		<!-- Link CSS -->
 		<link rel="stylesheet" href="/styles/main.css">
-		<link rel="stylesheet" href="/styles/mediaqueries.css">
 
 </head>
 ```
