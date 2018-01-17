@@ -12,9 +12,13 @@ Other Style Guides
   - [Environment / Scaffolding / Bundles / deployments](https://github.com/antonioSF)
 
 ## Table of Contents
-1. [Document & website structure](#document--website-structure)
+1. [Document structure](#document-structure)
+	1.1 [Semantic tags](#structure-your-document-properly)
+	1.2 [DOCTYPE Declaration](#doctype-declaration)
+	1.3 [HTML Element](#html-element)
+	1.4 [HEAD element](#head-header-element)
 
-## Document & website structure
+## Document structure
 #### Structure your document properly
 Use HTML5 semantic block level elements to define areas of your website.
 
