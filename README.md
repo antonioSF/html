@@ -13,10 +13,10 @@ Other Style Guides
 
 ## Table of Contents
 1. [Document structure](#document-structure)
-	1.1 [Semantic tags](#structure-your-document-properly)
-	1.2 [DOCTYPE Declaration](#doctype-declaration)
-	1.3 [HTML Element](#html-element)
-	1.4 [HEAD element](#head-header-element)
+	1. 1.1 [Semantic tags](#structure-your-document-properly)
+	2. 1.2 [DOCTYPE Declaration](#doctype-declaration)
+	3. 1.3 [HTML Element](#html-element)
+	4. 1.4 [HEAD element](#head-header-element)
 
 ## Document structure
 #### Structure your document properly
