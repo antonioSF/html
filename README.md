@@ -131,7 +131,7 @@ The HTML <html> element represents the root (top-level element) of an HTML docum
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
 #### <head> (header) element
-The HTML <head> element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
+The HEAD element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
 
 ```html
 <!-- <head> with title and required metadata -->
@@ -161,7 +161,7 @@ The HTML <head> element provides general information (metadata) about the docume
 		<!-- CSS link to file (all CSS files are loaded in respective order) -->
 		<link rel="stylesheet" href="/styles/main.css">
 		<link rel="stylesheet" href="/styles/mediaqueries.css">
-		
+
 </head>
 ```
 > **Note** This element includes the global attributes.
