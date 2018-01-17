@@ -9,7 +9,7 @@ Other Style Guides
 
   - [CSS & Sass](https://github.com/antonioSF)
   - [JavaScript](https://github.com/antonioSF)
-  - [Environment/Scaffolding/Bundles/deployments](https://github.com/antonioSF)
+  - [Environment / Scaffolding / Bundles / deployments](https://github.com/antonioSF)
 
 ### Prerequisites
 
