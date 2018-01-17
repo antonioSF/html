@@ -16,6 +16,7 @@ Other Style Guides
 
 ## Document & website structure
 #### Structure your document properly
+Use HTML5 semantic block level elements to define areas of your website.
 
 ```html
 <!DOCTYPE html>
@@ -95,9 +96,6 @@ Other Style Guides
 	</body>
 </html>
 ```
-
-> **Note**: Use HTML5 semantic block level elements to define areas of your website.
-
 #### DOCTYPE Declaration
 In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
 
