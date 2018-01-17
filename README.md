@@ -13,10 +13,12 @@ Other Style Guides
 
 ## Table of Contents
 1. [DOCUMENT STRUCTURE](#document-structure)
-	* 1.1 [Semantic tags](#structure-your-document-properly)
+	* 1.1 [Basic structure](#structure-your-document-properly)
 	* 1.2 [DOCTYPE Declaration](#doctype-declaration)
 	* 1.3 [HTML Element](#html-element)
 	* 1.4 [HEAD element](#head-header-element)
+	* 1.5 [BODY element](#)
+	* 1.6 [Semantic tags](#)
 2. [RESPONSIVE IMAGES](#)
 3. [VIDEO & AUDIO](#)
 4. [WEB FORMS](#)
