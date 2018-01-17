@@ -18,20 +18,6 @@ Other Style Guides
 #### Structure your document properly:
 * Use HTML5 semantic block level elements to define areas of your website
 
-#### DOCTYPE Declaration
-In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
-The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
-
-```html
-<!DOCTYPE html>
-```
-
-##### References
-> * [W3C - HTML5 Reference](https://dev.w3.org/html5/html-author/)
-> * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
-> * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
-
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -110,6 +96,23 @@ The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTM
 	</body>
 </html>
 ```
+
+#### DOCTYPE Declaration
+In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
+The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
+
+```html
+<!-- case insensitive -->
+<!DOCTYPE html>
+
+<!-- or -->
+<!doctype html>
+```
+
+##### References
+> * [W3C - HTML5 Reference](https://dev.w3.org/html5/html-author/)
+> * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
+> * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
 
 ### Prerequisites
 
