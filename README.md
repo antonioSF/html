@@ -15,8 +15,7 @@ Other Style Guides
 1. [Document & website structure](#document--website-structure)
 
 ## Document & website structure
-#### Structure your document properly:
-* Use HTML5 semantic block level elements to define areas of your website
+#### Structure your document properly
 
 ```html
 <!DOCTYPE html>
@@ -97,6 +96,8 @@ Other Style Guides
 </html>
 ```
 
+> **Note**: Use HTML5 semantic block level elements to define areas of your website.
+
 #### DOCTYPE Declaration
 In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
 
@@ -107,7 +108,7 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 <!-- lowercase is valid -->
 <!doctype html>
 ```
-> **Note**:The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
+> **Note**: The DOCTYPE originates from HTML’s SGML lineage and, in previous levels of HTML, was originally used to refer to a Document Type Definition (DTD). As HTML5 is no longer formally based upon SGML, the DOCTYPE no longer serves this purpose, and thus no longer needs to refer to a DTD. HTML5 defines three modes: quirks mode, limited quirks mode and no quirks mode. To ensure the most standards compliant rendering, it is important to ensure no-quirks mode is used.
 
 ##### References
 > * [W3C - HTML5 Reference](https://dev.w3.org/html5/html-author/)
