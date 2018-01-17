@@ -15,7 +15,7 @@ Other Style Guides
 1. [Document & website structure](#document-and-website-structure)
 
 ## Document & website structure
-Structure your document properly:
+#### Structure your document properly:
 * Use HTML5 semantic block level elements to define areas of your website
 
 
