@@ -194,7 +194,7 @@ Represents the content of an HTML document. There can be only one ```<body>``` E
 ```
 > **Note**: Avoid adding complex styling to the body Element
 ##### References
-> * [BODY: The Document Body Element - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
+> * [```<body>```: The Document Body Element - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
 
 #### Semantic Content Sectioning Elements
 Content sectioning elements allow you to organize the document content into logical pieces. A semantic element is an element that has intrinsic meaning  improving the markup available for documents. That being said, they can seriously improve websites accessibility.
@@ -279,6 +279,10 @@ Provides contact information for a person or people, or for an organization.
 	</div>
 </section>
 ```
+##### References
+> * [Document and website structure - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+> * [HTML elements reference - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
