@@ -390,10 +390,32 @@ Sorry, your browser doesn't support embedded video...
 ```
 > **Note**: Use the source element to specify the different media format. The browser will choose the most suitable one.
 
+###### The ```<audio>``` Element
+Used to embed sound content in documents. This element supports the global attributes (controls, buffered, loop, preload, volume, etc.).
+
+```html
+<!-- Simple audio -->
+<audio src="audio.ogg" autoplay>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<!-- Audio with source -->
+<audio controls preload="metadata">
+	<source src="audio.mp3" type="video/mp3">
+	<source src="audio.ogg" type="video/ogg; codecs=vorbis">
+	Your browser does not support the <code>audio</code> element.
+</audio>
+```
+
+> **Note**: Use the source element to specify the different media format. The browser will choose the most suitable one.
+
 ##### References
 > * [Video and audio content - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)
 > * [```<video>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
 > * [The video element | HTML Standard](https://html.spec.whatwg.org/#the-video-element)
+> * [Audio and video manipulation - App Center | MDN](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_manipulation)
+> * [```<audio>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+> * [The Web Audio API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 
 
 
