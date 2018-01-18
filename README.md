@@ -293,7 +293,11 @@ Provides contact information for a person or people, or for an organization.
 > * [Document and website structure - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 > * [HTML elements reference - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
+---
+
 **[⬆ back to top](#table-of-contents)**
+
+---
 
 ## Contributing
 
