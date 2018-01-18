@@ -417,7 +417,9 @@ Used to embed sound content in documents. This element supports the global attri
 > * [```<audio>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 > * [The Web Audio API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 
+---
 
+**[Back to top](#table-of-contents)**
 
 ## Contributing
 
