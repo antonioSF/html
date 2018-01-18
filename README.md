@@ -16,9 +16,9 @@ Other Style Guides
 	* 1.1 [Basic structure](#structure-your-document-properly)
 	* 1.2 [DOCTYPE Declaration](#doctype-declaration)
 	* 1.3 [HTML Element](#html-element)
-	* 1.4 [HEAD element](#head-header-element)
-	* 1.5 [BODY element](#)
-	* 1.6 [Semantic tags](#)
+	* 1.4 [HEAD Element](#head-header-element)
+	* 1.5 [BODY Element](#)
+	* 1.6 [Semantic Content Sectioning Elements](#)
 2. [RESPONSIVE IMAGES](#)
 3. [VIDEO & AUDIO](#)
 4. [WEB FORMS](#)
@@ -26,7 +26,7 @@ Other Style Guides
 
 ## Document structure
 #### Structure your document properly
-Use HTML5 semantic block level elements to define areas of your website.
+Use HTML5 semantic block level Elements to define areas of your website.
 
 ```html
 <!DOCTYPE html>
@@ -124,7 +124,7 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 > * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
 
 #### HTML Element
-The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+The HTML <html> Element represents the root (top-level Element) of an HTML document, so it is also referred to as the root Element. All other Elements must be descendants of this Element.
 
 ```html
 <!-- html with dir global attribute -->
@@ -135,18 +135,18 @@ The HTML <html> element represents the root (top-level element) of an HTML docum
 	</body>
 </html>
 ```
-> **Note** This element includes the global attributes.
+> **Note** This Element includes the global attributes.
 ##### References
 > * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
-#### HEAD (header) element
-The HEAD element provides general information (metadata) about the document.
+#### HEAD (header) Element
+The HEAD Element provides general information (metadata) about the Document.
 
 ```html
-<!-- <head> with title and required metadata -->
+<!-- <head> with title and required Document metadata -->
 <head>
-		<!-- Character encoding for the document -->
+		<!-- Character encoding for the Document -->
 		<meta charset="utf-8">
 
 		<!-- Instruct IE to use its latest rendering engine -->
@@ -173,10 +173,121 @@ The HEAD element provides general information (metadata) about the document.
 
 </head>
 ```
-> **Note** This element includes the global attributes.
+> **Note** This Element includes the global attributes.
 ##### References
-> * [MDN web docs - head: The Document Metadata (Header) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+> * [MDN web docs - head: The Document Metadata (Header) Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
 
+#### BODY Element
+The BODY Element represents the content of an HTML document. There can be only one ```<body>``` Element in a document.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Document Title</title>
+	</head>
+	<body>
+		<p>This is a paragraph.</p>
+	</body>
+</html>
+```
+> **Note** Avoid adding complex styling to the body Element
+##### References
+> * [BODY: The Document Body Element - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
+
+#### Semantic Content Sectioning Elements
+Content sectioning elements allow you to organize the document content into logical pieces. A semantic element is an element that has intrinsic meaning  improving the markup available for documents. That being said, they can seriously improve websites accessibility.
+
+###### The ```<header>``` Element
+Represents introductory content, typically a logo and a nav menu, or a title. Sometimes you may have more than one header. At the beginnig of an article or section, for example, if there's a case for it.
+```html
+<header>
+	<h2>Introductory content</h2>
+</header>
+```
+###### The ```<nav>``` Element
+Represents a section of a page whose purpose is to provide navigation links like a menu.
+```html
+<nav>
+	<ul>
+		<li><a href="#">link 1</a></li>
+		<li><a href="#">link 2</a></li>
+		<li><a href="#">link 3</a></li>
+	</ul>
+</nav>
+```
+###### The ```<h1>–<h6>``` Elements
+Represents six levels of section headings. ```<h1>``` is the highest section level and ```<h6>``` is the lowest. If several are used together, they can be grouped into an ```<hgroup>```
+```html
+<hgroup>
+	<h2>If several section headings are present</h2>
+	<h3>they can be grouped</h3>
+	<h4>together</h4>
+</hgroup>
+```
+###### The ```<main>``` Element
+Represents content unique to the document. Use it only once per page.
+```html
+<main role="main">
+	<p>the main content</p>
+</main>
+```
+###### The ```<section>``` Element
+Represents a standalone section — which doesn't have a more specific semantic element to represent it.
+```html
+<section>
+	<h2>A Standalone section</h2>
+</section>
+```
+###### The ```<article>``` Element
+Represents an independent self-contained composition in a document (Eg. blog post, etc...).
+```html
+<article>
+	<h2>Article title</h2>
+	<p>Article content</p>
+</article>
+```
+###### The ```<aside>``` Element
+Represents represents content indirectly related to the main content.
+```html
+<aside>
+	<h2>Aside title</h2>
+</aside>
+```
+###### The ```<footer>``` Element
+Represents a footer for its nearest sectioning content or sectioning root element. Tipically, it will be present at the end of the document containing contact info, copyrights, etc. Sometimes you may have more than one footer. At the end of an article, for example, if there's a case for it.
+```html
+<footer>
+	<p>&copy; 2018. All rights reserved.</p>
+</footer>
+```
+###### The ```<address>``` Element
+Provides contact information for a person or people, or for an organization.
+```html
+<address>
+	<p>Here you can put contact info eg. <a href="mailto:info@example.com">info@example.com</a></p>
+</address>
+```
+> **Note** Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content. The ```<div>``` Element is a  non-semantic element. It has no effect on the content or layout until styled using CSS. Use it when you can't find an ideal semantic element to group some items together or wrap some content.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Document Title</title>
+	</head>
+	<body>
+		<section>
+			<!-- use the div element for styling purposes -->
+			<div class="wrapper">
+				<p>This is a paragraph.</p>
+			</div>
+		</section>
+	</body>
+</html>
+```
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
