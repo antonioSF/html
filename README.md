@@ -317,7 +317,10 @@ With the plethora of devices and different screen sizes and resolutions nowadays
 * Use srcset and the x descriptor in the img element.
 * Use SVG when possible (logos, icons, etc.).
 * Use Font icons.
-* Always compress your images (use progressive JPEG, remove metadata, use software as PHOTOSHOP, ImageAlpha, ImageOptim)
+* Always compress your images (use progressive JPEG, remove metadata, use software as PHOTOSHOP, ImageAlpha, ImageOptim).
+
+###### The ```<picture>``` Element
+Serves as a container for zero or more ```<source>``` elements and one ```<img>``` element to provide versions of an image for different display device scenarios.
 
 ```html
 <!-- use the picture element -->
@@ -336,14 +339,14 @@ Represents self-contained content, frequently with a caption (```<figcaption>```
 ```html
 <!-- using the figure element -->
 <figure>
-   <picture>
-      <source ...>
-      <source ...>
-      <source ...>
-      <img..>
-   </picture>
+	<picture>
+		<source ...>
+		<source ...>
+		<source ...>
+		<img..>
+	</picture>
 
-   <figcaption>A Caption</figcaption>
+	<figcaption>A Caption</figcaption>
 </figure>
 ```
 
