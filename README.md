@@ -106,7 +106,7 @@ Use HTML5 semantic block level Elements to define areas of your website.
 	</body>
 </html>
 ```
-#### DOCTYPE Declaration
+#### The DOCTYPE Declaration
 In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
 
 ```html
@@ -123,8 +123,8 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 > * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
 > * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
 
-#### HTML Element
-The HTML <html> Element represents the root (top-level Element) of an HTML document, so it is also referred to as the root Element. All other Elements must be descendants of this Element.
+#### The ```<html>``` Element
+Represents the root (top-level Element) of an HTML document, so it is also referred to as the root Element.All other Elements must be descendants of this Element.
 
 ```html
 <!-- html with dir global attribute -->
@@ -135,13 +135,13 @@ The HTML <html> Element represents the root (top-level Element) of an HTML docum
 	</body>
 </html>
 ```
-> **Note** This Element includes the global attributes.
+> **Note**: This Element includes the global attributes.
 ##### References
 > * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
 
-#### HEAD (header) Element
-The HEAD Element provides general information (metadata) about the Document.
+#### The ```<head>```(header) Element
+Provides general information (metadata) about the Document.
 
 ```html
 <!-- <head> with title and required Document metadata -->
@@ -173,12 +173,12 @@ The HEAD Element provides general information (metadata) about the Document.
 
 </head>
 ```
-> **Note** This Element includes the global attributes.
+> **Note**: This Element includes the global attributes.
 ##### References
 > * [MDN web docs - head: The Document Metadata (Header) Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
 
-#### BODY Element
-The BODY Element represents the content of an HTML document. There can be only one ```<body>``` Element in a document.
+#### The ```<body>``` Element
+Represents the content of an HTML document. There can be only one ```<body>``` Element in a document.
 
 ```html
 <!DOCTYPE html>
@@ -192,7 +192,7 @@ The BODY Element represents the content of an HTML document. There can be only o
 	</body>
 </html>
 ```
-> **Note** Avoid adding complex styling to the body Element
+> **Note**: Avoid adding complex styling to the body Element
 ##### References
 > * [BODY: The Document Body Element - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
 
@@ -221,9 +221,9 @@ Represents a section of a page whose purpose is to provide navigation links like
 Represents six levels of section headings. ```<h1>``` is the highest section level and ```<h6>``` is the lowest. If several are used together, they can be grouped into an ```<hgroup>```
 ```html
 <hgroup>
-	<h2>If several section headings are present</h2>
-	<h3>they can be grouped</h3>
-	<h4>together</h4>
+	<h2>First title</h2>
+	<h3>Subtitle</h3>
+	<h4>another subtitle</h4>
 </hgroup>
 ```
 ###### The ```<main>``` Element
@@ -269,24 +269,15 @@ Provides contact information for a person or people, or for an organization.
 	<p>Here you can put contact info eg. <a href="mailto:info@example.com">info@example.com</a></p>
 </address>
 ```
-> **Note** Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content. The ```<div>``` Element is a  non-semantic element. It has no effect on the content or layout until styled using CSS. Use it when you can't find an ideal semantic element to group some items together or wrap some content.
+> **Note**: The ```<div>``` Element is a  non-semantic element. It has no effect on the content or layout until styled using CSS. Use it when you can't find an ideal semantic element to group some items together or wrap some content.
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Document Title</title>
-	</head>
-	<body>
-		<section>
-			<!-- use the div element for styling purposes -->
-			<div class="wrapper">
-				<p>This is a paragraph.</p>
-			</div>
-		</section>
-	</body>
-</html>
+<section>
+	<!-- use the div element for styling purposes -->
+	<div class="wrapper">
+		<p>This is a paragraph.</p>
+	</div>
+</section>
 ```
 ## Contributing
 
