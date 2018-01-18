@@ -20,7 +20,7 @@ Other Style Guides
 	* 1.5 [The ```<body>``` Element](#the-body-element)
 	* 1.6 [Semantic Content Elements](#semantic-content-sectioning-elements)
 2. [RESPONSIVE IMAGES](#responsive-images)
-3. [VIDEO & AUDIO](#)
+3. [VIDEO & AUDIO](#video--audio)
 4. [WEB FORMS](#)
 5. [ACCESSIBILITY](#)
 
@@ -343,7 +343,7 @@ Represents self-contained content, frequently with a caption (```<figcaption>```
 		<source ...>
 		<source ...>
 		<source ...>
-		<img..>
+		<img...>
 	</picture>
 
 	<figcaption>A Caption</figcaption>
@@ -356,13 +356,45 @@ Represents self-contained content, frequently with a caption (```<figcaption>```
 > * [Responsive Images | Udacity](https://eu.udacity.com/course/responsive-images--ud882)
 > * [Image Optimization | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
 > * [Images | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
-> * [The picture element | HTML Standard ](https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+> * [The picture element | HTML Standard](https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
 > * [Getting Started | WebP | Google Developers](https://developers.google.com/speed/webp/docs/using)
 > * [```<figure>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
 
 ---
 
 **[Back to top](#table-of-contents)**
+
+#### Video & Audio
+In the early days, native web technologies such as HTML didn't have the ability to embed video and audio on the Web, so proprietary (or plugin-based) technologies like Flash (and later, Silverlight) became popular for handling such content. A few years later the HTML5 specification had such features added, with the ```<video>``` and ```<audio>``` elements.
+
+###### The ```<video>``` Element
+It serves to embed video content in a document. This element supports the global attributes (controls, autoplay, loop, preload, etc.)
+
+```html
+<!-- simple video with poster image -->
+<video src="video.webm" autoplay poster="posterimage.jpg">
+Sorry, your browser doesn't support embedded video...
+</video>
+
+<!-- Video with different sources for the media format. 
+	This allows for supported fallbacks with different browsers -->
+<video controls preload="metadata">
+	<source src="video.mp4" type="video/mp4">
+	<source src="video.webm" type="video/webm">
+
+	<!-- with subtitles -->
+	<track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
+  	<track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
+	<p>Sorry, your browser doesn't support embedded video...</p>
+</video>
+```
+> **Note**: Use the source element to specify the different media format. The browser will choose the most suitable one.
+
+##### References
+> * [Video and audio content - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)
+> * [```<video>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
+> * [The video element | HTML Standard](https://html.spec.whatwg.org/#the-video-element)
+
 
 
 ## Contributing
