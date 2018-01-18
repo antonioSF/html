@@ -16,7 +16,7 @@ Other Style Guides
 	* 1.1 [Basic structure](#structure-your-document-properly)
 	* 1.2 [The DOCTYPE Declaration](#the-doctype-declaration)
 	* 1.3 [The ```<html>``` Element](#the-html-element)
-	* 1.4 [The ```<head>``` Element](#theheadheader-element)
+	* 1.4 [The ```<head>``` Element](#the-headheader-element)
 	* 1.5 [The ```<body>``` Element](#the-body-element)
 	* 1.6 [Semantic Content Sectioning Elements](#semantic-content-sectioning-elements)
 2. [RESPONSIVE IMAGES](#)
@@ -106,6 +106,8 @@ Use HTML5 semantic block level Elements to define areas of your website.
 	</body>
 </html>
 ```
+**[⬆ back to top](#table-of-contents)**
+
 #### The DOCTYPE Declaration
 In HTML, the Document Type Declaration is required at the beginning of a document. Its sole purpose is to prevent a browser from switching into so-called "quirks mode" when rendering a document.
 
@@ -123,6 +125,8 @@ In HTML, the Document Type Declaration is required at the beginning of a documen
 > * [MDN web docs - DOCTYPE](https://developer.mozilla.org/pt-PT/docs/Glossary/Doctype)
 > * [HTML Standard - Definition of the DOCTYPE](https://html.spec.whatwg.org/multipage/syntax.html#the-doctype)
 
+**[⬆ back to top](#table-of-contents)**
+
 #### The ```<html>``` Element
 Represents the root (top-level Element) of an HTML document, so it is also referred to as the root Element.All other Elements must be descendants of this Element.
 
@@ -139,6 +143,8 @@ Represents the root (top-level Element) of an HTML document, so it is also refer
 ##### References
 > * [MDN web docs - HTML Global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 > * [MDN web docs - HTML Root element](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/html)
+
+**[⬆ back to top](#table-of-contents)**
 
 #### The ```<head>```(header) Element
 Provides general information (metadata) about the Document.
@@ -177,6 +183,8 @@ Provides general information (metadata) about the Document.
 ##### References
 > * [MDN web docs - head: The Document Metadata (Header) Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
 
+**[⬆ back to top](#table-of-contents)**
+
 #### The ```<body>``` Element
 Represents the content of an HTML document. There can be only one ```<body>``` Element in a document.
 
@@ -195,6 +203,8 @@ Represents the content of an HTML document. There can be only one ```<body>``` E
 > **Note**: Avoid adding complex styling to the body Element
 ##### References
 > * [```<body>```: The Document Body Element - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
+
+**[⬆ back to top](#table-of-contents)**
 
 #### Semantic Content Sectioning Elements
 Content sectioning elements allow you to organize the document content into logical pieces. A semantic element is an element that has intrinsic meaning  improving the markup available for documents. That being said, they can seriously improve websites accessibility.
@@ -282,6 +292,8 @@ Provides contact information for a person or people, or for an organization.
 ##### References
 > * [Document and website structure - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 > * [HTML elements reference - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 
