@@ -18,8 +18,8 @@ Other Style Guides
 	* 1.3 [The ```<html>``` Element](#the-html-element)
 	* 1.4 [The ```<head>``` Element](#the-headheader-element)
 	* 1.5 [The ```<body>``` Element](#the-body-element)
-	* 1.6 [Semantic Content Sectioning Elements](#semantic-content-sectioning-elements)
-2. [RESPONSIVE IMAGES](#)
+	* 1.6 [Semantic Content Elements](#semantic-content-sectioning-elements)
+2. [RESPONSIVE IMAGES](#responsive-images)
 3. [VIDEO & AUDIO](#)
 4. [WEB FORMS](#)
 5. [ACCESSIBILITY](#)
@@ -302,6 +302,60 @@ Provides contact information for a person or people, or for an organization.
 ##### References
 > * [Document and website structure - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 > * [HTML elements reference - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+---
+
+**[Back to top](#table-of-contents)**
+
+#### Responsive Images
+Images often account for most of the downloaded bytes on a web page.
+The very first question you should ask yourself is whether an image is, in fact, required to achieve the effect you are after. Good design is simple and will also always yield the best performance. That said, as a rule, you should sacrifice image quality over performance.
+With the plethora of devices and different screen sizes and resolutions nowadays, it is imperative to implement responsive images.
+
+* Use the picture element.
+* Use relative sizes (%) for images to prevent them from accidentally overflowing the container.
+* Use srcset and the x descriptor in the img element.
+* Use SVG when possible (logos, icons, etc.).
+* Use Font icons.
+* Always compress your images (use progressive JPEG, remove metadata, use software as PHOTOSHOP, ImageAlpha, ImageOptim)
+
+```html
+<!-- use the picture element -->
+<picture>
+	<source media="(min-width: 64rem)" srcset="images/example-large-screens1x.jpg, images/example-large-screens2x.jpg 2x">
+	<source media="(min-width: 40rem)" srcset="images/example-medium-screens1x.jpg, images/example-medium-screens2x.jpg 2x">
+	<img src="images/example-small-screens1x.jpg" srcset="images/example-small-screens2x.jpg 2x" alt="Responsive Image Example">
+</picture>
+
+<!-- art direction. Give diferent images with diferent sizes based on browser dimensions -->
+<img src="images/example-small-screens1x.jpg" sizes="(min-width: 64rem) 50vw, 25vw" srcset="images/example-small-screens2x.jpg 900w, images/example-large-screens1x.jpg 1024w, images/example-large-screens2x.jpg 2000w"  alt="Responsive Image Example 2">
+```
+###### The ```<figure>``` Element
+Represents self-contained content, frequently with a caption (```<figcaption>```), and is typically referenced as a single unit that can be moved away from the main flow of the document without affecting the document's meaning. It can contain images, charts, tables, code snippets, etc.
+
+```html
+<!-- using the figure element -->
+<figure>
+   <picture>
+      <source ...>
+      <source ...>
+      <source ...>
+      <img..>
+   </picture>
+
+   <figcaption>A Caption</figcaption>
+</figure>
+```
+
+> **Note**: It is semantically correct to use any of the examples shown above. It is up to you, and the use case to decide which is the best method to implement.
+
+##### References
+> * [Responsive Images | Udacity](https://eu.udacity.com/course/responsive-images--ud882)
+> * [Image Optimization | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
+> * [Images | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
+> * [The picture element | HTML Standard ](https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+> * [Getting Started | WebP | Google Developers](https://developers.google.com/speed/webp/docs/using)
+> * [```<figure>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
 
 ---
 
