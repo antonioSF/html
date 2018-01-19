@@ -421,6 +421,66 @@ Used to embed sound content in documents. This element supports the global attri
 
 **[Back to top](#table-of-contents)**
 
+
+#### Web Forms
+The creation of web forms has always been a complex task, particularly when you have to validate data.  HTML5 introduced new mechanisms for forms: it added new semantic types for the ```<input>``` element and constraint validation to ease the work of checking the form content on the client side.
+
+* Choose the most appropriate input type for your data to simplify input.
+* When suitable, offer suggestions as the user types with the datalist element.
+* Provide real-time input validation as it might be frustrating for the user otherwise.
+* Use placeholders to provide usefull hints about the input type.
+* Use high contrast and large input fields for Accessibility reasons.
+* Organize your form, it must be concise and understandable.
+
+###### The ```<form>``` Element
+Represents a document section that contains interactive controls to submit information to a web server. This element includes the global attributes: action, enctype, method, autocomplete, etc.
+
+```html
+<!-- simple form will send a GET request and first name input is required -->
+<form action="" method="GET">
+	<label for="js-fname">First name</label>
+	<input type="text" id="js-fname" name="fname" required>
+</form>
+
+<!-- Form will send a POST request to data.php request and accepts files -->
+<form action="data.php" method="POST" enctype="multipart/form-data">
+	<label for="js-file">Upload files:</label>
+	<input type="file" id="js-file" name="file" multiple>
+	<button type="submit">Submit file</button>
+</form>
+```
+
+###### The ```<input>``` Element
+Used to create interactive controls for web-based forms in order to accept data from the user.
+How an ```<input>``` works varies considerably depending on the value of its type attribute.
+
+* Always use labels on form inputs, and ensure they're visible when the field is in focus
+* Use placeholders to provide guidance about what you expect.
+* To help the browser auto-complete the form, use established name's for elements and include the autocomplete attribute.
+* Always validate inputs with the required attribute as well as the pattern, min, max, step, etc. 
+
+```html
+<!-- label attribute "for" accepts the id of the targeted input.
+	Always use the name attribute on inputs as well as 
+	if its required and provide autocomplete parameters -->
+<label for="js-name">Your Full Name:</label>
+<input type="text" id="js-name" name="name" required autocomplete="name">
+<!-- autocomplete attribute accepts different values as: 
+	off, on, email, username, etc. For more information on 
+	recommended input name and aucomplete attribute values refer to references --> 
+
+```
+
+
+> **Note**: Sometimes you will feel the need to submit data to the server without the form element and ```<input>``` elements, but simulating one. That's okay, as long as you take the necessary precautions and best pratices. Refer to [Accessibility](#accessibility) for more details.
+
+##### References
+> * [HTML forms - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
+> * [```<form>``` - HTML | MDN](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/form)
+> * [Form data validation - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
+> * [Constraint validation - Web developer guides | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation)
+
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
