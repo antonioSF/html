@@ -546,8 +546,8 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 
 
 ## Accessibility
-Accessibility means that a website's content is available, and its functionality can be operated, by literally anyone. It ranges from user's slow network and device's capability to users with physical impairments. 
-As Web Applications become increasingly powerful enabling users to improve their daily habits, developers have an amazing power. That said, with power cames great responsability. Accessibility concerns must be a priority while developing new web applications. 
+Accessibility means that a website's content is available, and its functionality can be operated, by literally anyone. It ranges from a user's slow network and device capabilities to users with physical impairments. 
+As Web Applications become increasingly powerful enabling users to improve their daily habits, developers have an amazing power. That said, with power cames great responsability. Accessibility concerns must be a priority while developing new Web Applications. 
 [WCAG](https://www.w3.org/TR/WCAG20/) is organized around four principles often called by the acronym POUR:
 
 * **Perceivable**: Can users perceive the content? This helps us keep in mind that just because something is perceivable with one sense, such as sight, that doesn't mean that all users can perceive it.
@@ -637,6 +637,12 @@ As Web Applications become increasingly powerful enabling users to improve their
 * Compress and optimize images and resources (CSS, JavaScript).
 
 * Provide support for different browsers and, if requested, to legacy browsers (IE).
+
+* Always check your website against the [WebAIM checklist](https://webaim.org/standards/wcag/checklist).
+
+#### ARIA
+Accessible Rich Internet Applications (ARIA)  is a set of attributes that define ways to make Web content and Web applications. ARIA is a set of special accessibility attributes which can be added to any markup, but is especially suited to HTML. 
+* The ```role``` attribute defines a specific role for type of object (such as an article, alert, slider or a button).
 
 ##### References
 > * [Create Amazing Forms | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/input/forms/)
