@@ -20,8 +20,16 @@ Other Style Guides
 	* 1.5 [The ```<body>``` Element](#the-body-element)
 	* 1.6 [Semantic Content Elements](#semantic-content-sectioning-elements)
 2. [RESPONSIVE IMAGES](#responsive-images)
+	* 2.1 [The ```<picture>``` Element](#the-picture-element)
+	* 2.2 [The ```<figure>``` Element](#the-figure-element)
 3. [VIDEO & AUDIO](#video--audio)
+	* 3.1 [The ```<video>``` Element](#the-video-element)
+	* 3.2 [The ```<audio>``` Element](#the-audio-element)
 4. [WEB FORMS](#web-forms)
+	* 4.1 [The ```<form>``` Element](#the-form-element)
+	* 4.2 [The ```<input>``` Element](#the-input-element)
+	* 4.3 [Form ```<input>``` types](#form-input-types)
+	* 4.4 [Latest Form Elements](#latest-html5-form-elements-introduced)
 5. [ACCESSIBILITY](#)
 
 ## Document structure
