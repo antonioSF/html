@@ -30,7 +30,7 @@ Other Style Guides
 	* 4.2 [The ```<input>``` Element](#the-input-element)
 	* 4.3 [Form ```<input>``` types](#form-input-types)
 	* 4.4 [Latest Form Elements](#latest-html5-form-elements-introduced)
-5. [ACCESSIBILITY](#)
+5. [ACCESSIBILITY](#accessibility)
 
 ## Document structure
 #### Structure your document properly
@@ -315,7 +315,7 @@ Provides contact information for a person or people, or for an organization.
 
 **[Back to top](#table-of-contents)**
 
-#### Responsive Images
+## Responsive Images
 Images often account for most of the downloaded bytes on a web page.
 The very first question you should ask yourself is whether an image is, in fact, required to achieve the effect you are after. Good design is simple and will also always yield the best performance. That said, as a rule, you should sacrifice image quality over performance.
 With the plethora of devices and different screen sizes and resolutions nowadays, it is imperative to implement responsive images.
@@ -327,7 +327,7 @@ With the plethora of devices and different screen sizes and resolutions nowadays
 * Use Font icons.
 * Always compress your images (use progressive JPEG, remove metadata, use software as PHOTOSHOP, ImageAlpha, ImageOptim).
 
-###### The ```<picture>``` Element
+#### The ```<picture>``` Element
 Serves as a container for zero or more ```<source>``` elements and one ```<img>``` element to provide versions of an image for different display device scenarios.
 
 ```html
@@ -341,7 +341,7 @@ Serves as a container for zero or more ```<source>``` elements and one ```<img>`
 <!-- art direction. Give diferent images with diferent sizes based on browser dimensions -->
 <img src="images/example-small-screens1x.jpg" sizes="(min-width: 64rem) 50vw, 25vw" srcset="images/example-small-screens2x.jpg 900w, images/example-large-screens1x.jpg 1024w, images/example-large-screens2x.jpg 2000w"  alt="Responsive Image Example 2">
 ```
-###### The ```<figure>``` Element
+#### The ```<figure>``` Element
 Represents self-contained content, frequently with a caption (```<figcaption>```), and is typically referenced as a single unit that can be moved away from the main flow of the document without affecting the document's meaning. It can contain images, charts, tables, code snippets, etc.
 
 ```html
@@ -372,10 +372,10 @@ Represents self-contained content, frequently with a caption (```<figcaption>```
 
 **[Back to top](#table-of-contents)**
 
-#### Video & Audio
+## Video & Audio
 In the early days, native web technologies such as HTML didn't have the ability to embed video and audio on the Web, so proprietary (or plugin-based) technologies like Flash (and later, Silverlight) became popular for handling such content. A few years later the HTML5 specification had such features added, with the ```<video>``` and ```<audio>``` elements.
 
-###### The ```<video>``` Element
+#### The ```<video>``` Element
 It serves to embed video content in a document. This element supports the global attributes (controls, autoplay, loop, preload, etc.)
 
 ```html
@@ -398,7 +398,7 @@ Sorry, your browser doesn't support embedded video...
 ```
 > **Note**: Use the source element to specify the different media format. The browser will choose the most suitable one.
 
-###### The ```<audio>``` Element
+#### The ```<audio>``` Element
 Used to embed sound content in documents. This element supports the global attributes (controls, buffered, loop, preload, volume, etc.).
 
 ```html
@@ -430,7 +430,7 @@ Used to embed sound content in documents. This element supports the global attri
 **[Back to top](#table-of-contents)**
 
 
-#### Web Forms
+## Web Forms
 The creation of web forms has always been a complex task, particularly when you have to validate data.  HTML5 introduced new mechanisms for forms: it added new semantic types for the ```<input>``` element and constraint validation to ease the work of checking the form content on the client side.
 
 * Choose the most appropriate input type for your data to simplify input.
@@ -440,7 +440,7 @@ The creation of web forms has always been a complex task, particularly when you 
 * Use high contrast and large input fields for Accessibility reasons.
 * Organize your form, it must be concise and understandable.
 
-###### The ```<form>``` Element
+#### The ```<form>``` Element
 Represents a document section that contains interactive controls to submit information to a web server. This element includes the global attributes: action, enctype, method, autocomplete, etc.
 
 ```html
@@ -459,7 +459,7 @@ Represents a document section that contains interactive controls to submit infor
 </form>
 ```
 
-###### The ```<input>``` Element
+#### The ```<input>``` Element
 Used to create interactive controls for web-based forms in order to accept data from the user.
 How an ```<input>``` works varies considerably depending on the value of its type attribute.
 
@@ -500,7 +500,7 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 <label for="js-postal-code">Postal code:</label>
 <input type="text" id="js-postal-code" pattern="[0-9]{4}[\-]?[0-9]{3}" autocomplete="postal-code">
 ```
-###### Form ```<input>``` types
+#### Form ```<input>``` types
 * [button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button): A push button with no default behavior.
 * [checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): A check box allowing single values to be selected/deselected.
 * [color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color): A control for specifying a color. A color picker's UI has no required features other than accepting simple colors as text.
@@ -524,7 +524,7 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 * [url](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url): A field for entering a URL.
 * [week](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week) A control for entering a date consisting of a week-year number and a week number with no time zone.
 
-###### Latest HTML5 Form elements introduced
+#### Latest HTML5 Form elements introduced
 * [```<datalist>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist): The HTML Datalist element contains a set of ```<option>``` elements that represent the values available for other controls.
 * [```<output>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output): The HTML Output element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.
 
@@ -544,6 +544,106 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 
 **[Back to top](#table-of-contents)**
 
+
+## Accessibility
+Accessibility means that a website's content is available, and its functionality can be operated, by literally anyone. It ranges from user's slow network and device's capability to users with physical impairments. 
+As Web Applications become increasingly powerful enabling users to improve their daily habits, developers have an amazing power. That said, with power cames great responsability. Accessibility concerns must be a priority while developing new web applications. 
+[WCAG](https://www.w3.org/TR/WCAG20/) is organized around four principles often called by the acronym POUR:
+
+* **Perceivable**: Can users perceive the content? This helps us keep in mind that just because something is perceivable with one sense, such as sight, that doesn't mean that all users can perceive it.
+* **Operable**: Can users use UI components and navigate the content? For example, something that requires a hover interaction cannot be operated by someone who can't use a mouse or touch screen.
+* **Understandable**: Can users understand the content? Can users understand the interface and is it consistent enough to avoid confusion?
+* **Robust**: Can the content be consumed by a wide variety of user agents (browsers)? Does it work with assistive technology?
+
+**With that in mind, you should follow the below list while developing a website:**
+
+* Organize your content and keep it logical and consice (navigation, etc.).
+
+* Implement [skip navigation](https://webaim.org/techniques/skipnav/) if necessary.
+
+* Provide high contrast and good font sizes from low-vision users to read.
+
+* Have a specified foreground and background color.
+
+* Minize the use of fonts and variants, keep design clean and performance optimal.
+
+* Blocks of text over one sentence in length are no more than 80 characters wide.
+
+* Do not justify text.
+
+* Provide HTML5 Semantic Elements that screen readers can understand.
+```html
+
+<!-- bad -->
+<div class="main">
+</div>
+
+<!-- good -->
+<main role="main">
+</main> 
+```
+
+* Use HTML5 native elements when possible.
+```html
+
+<!-- bad -->
+<span class="button">click me</span>
+
+<!-- good -->
+<button>click me</button>
+
+<a href="#">click me</a>
+```
+
+* Use [tabindex](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex) when you'll need to modify the tab order.
+```html
+
+<!-- bad (avoid adding other value greater then 0 since its an anti-pattern) -->
+<button tabindex="5">Press Tab to Focus Me first!</button>
+
+<!-- good -->
+<span tabindex="0">Press Tab to Focus Me!</span>
+```
+
+* Use the ```alt``` attribute to describe important content images. Otherwise leave the ```alt```empty.
+```html
+
+<!-- bad -->
+<image src="my-name.jpg">
+
+<!-- good -->
+<image src="my-name.jpg" alt="My Name">
+``` 
+
+* Form buttons have a descriptive value.
+
+* Form inputs have associated text labels.
+```html
+
+<!-- bad -->
+<input type="text" name="fname" placeholder="Marty">
+
+<!-- good -->
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" placeholder="Marty">
+```
+
+* Keep interactive elements focusable.
+
+* All page functionality is available using the keyboard.
+
+* No page content flashes more than 3 times per second or it may cause seizures.
+
+* Compress and optimize images and resources (CSS, JavaScript).
+
+* Provide support for different browsers and, if requested, to legacy browsers (IE).
+
+##### References
+> * [Create Amazing Forms | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/input/forms/)
+
+---
+
+**[Back to top](#table-of-contents)**
 
 ## Contributing
 
