@@ -461,24 +461,80 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 * Always validate inputs with the required attribute as well as the pattern, min, max, step, etc. 
 
 ```html
-<!-- label attribute "for" accepts the id of the targeted input. -->
+<!-- Label attribute "for" accepts the id of the targeted input. -->
 <label for="js-name">Your Full Name:</label>
-<input type="text" id="js-name" name="name" required autocomplete="name">
+<input type="text" id="js-name" name="name" placeholder="Marty Mcfly" required autocomplete="name">
 <!-- Always use the name attribute on inputs as well as 
 	if its required and provide autocomplete parameters. 
 	Autocomplete attribute accepts different values as: 
-	off, on, email, username, etc. --> 
+	off, on, email, username, etc. -->
 
+<!-- Always use the right type attribute for the required data -->
+<label for="js-email">Email:</label>
+<input type="email" id="js-email" name="email" placeholder="marty@gmail.com" autocomplete="email" required>
+
+<!-- Validate inputs with proper attributes -->
+<label for="js-tel">Telephone:</label>
+<input type="tel" id="js-tel" name="phone" autocomplete="tel" placeholder="910000000" minlength="9" maxlength="15">
+
+<!-- Offer suggestions as the user types with the datalist element  -->
+<label for="js-city">City:</label>
+<input type="text" id="js-city" type="text" list="cities" name="city" placeholder="Lisbon">
+<datalist id="cities">
+	<option value="Lisbon"></option>
+	<option value="Oporto"></option>
+	<option value="New York"></option>
+	<option value="London"></option>
+	<option value="Sydney"></option>
+</datalist>
+
+<!-- Use the pattern attribute (regular expressions) to validate input  -->
+<label for="js-postal-code">Postal code:</label>
+<input type="text" id="js-postal-code" pattern="[0-9]{4}[\-]?[0-9]{3}" autocomplete="postal-code">
 ```
+###### Form ```<input>``` types
+* [button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button): A push button with no default behavior.
+* [checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): A check box allowing single values to be selected/deselected.
+* [color](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color): A control for specifying a color. A color picker's UI has no required features other than accepting simple colors as text.
+* [date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date): A control for entering a date (year, month, and day, with no time).
+* [datetime-local](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local): A control for entering a date and time, with no time zone.
+* [email](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email): A field for editing an e-mail address.
+* [file](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file): A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select.
+* [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden): A control that is not displayed but whose value is submitted to the server.
+* [image](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image): A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels.
+* [month](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month): A control for entering a month and year, with no time zone.
+* [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number): A control for entering a number.
+* [password](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password): A single-line text field whose value is obscured. Use the maxlength and minlength attributes to specify the maximum length of the value that can be entered.
+* [radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): A radio button, allowing a single value to be selected out of multiple choices.
+* [range](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range): A control for entering a number whose exact value is not important.
+* [reset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset): A button that resets the contents of the form to default values.
+* [search](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search): A single-line text field for entering search strings. Line-breaks are automatically removed from the input value.
+* [submit](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit): A button that submits the form.
+* [tel](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel): A control for entering a telephone number.
+* [text](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text): A single-line text field. Line-breaks are automatically removed from the input value.
+* [time](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time): A control for entering a time value with no time zone.
+* [url](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url): A field for entering a URL.
+* [week](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week) A control for entering a date consisting of a week-year number and a week number with no time zone.
 
+###### Latest HTML5 Form elements introduced
+* [```<datalist>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist): The HTML Datalist element contains a set of ```<option>``` elements that represent the values available for other controls.
+* [```<output>```](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output): The HTML Output element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.
 
-> **Note**: Sometimes you will feel the need to submit data to the server without the form element and ```<input>``` elements, but simulating one. That's okay, as long as you take the necessary precautions and best pratices. Refer to [Accessibility](#accessibility) for more details.
+> **Note**: Before submitting any data to the server, do client-side form validation with JavaScript: use the [Constraint Validation API](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation) for this purpose.
 
 ##### References
+> * [Create Amazing Forms | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/input/forms/)
 > * [HTML forms - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
 > * [```<form>``` - HTML | MDN](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/form)
+> * [```<input>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 > * [Form data validation - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
 > * [Constraint validation - Web developer guides | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation)
+> * [Client-Side Form Validation with HTML5 — SitePoint](https://www.sitepoint.com/client-side-form-validation-html5/)
+> * [HTML5 Pattern](http://html5pattern.com/)
+
+---
+
+**[Back to top](#table-of-contents)**
 
 
 ## Contributing
