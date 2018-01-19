@@ -31,6 +31,8 @@ Other Style Guides
 	* 4.3 [Form ```<input>``` types](#form-input-types)
 	* 4.4 [Latest Form Elements](#latest-html5-form-elements-introduced)
 5. [ACCESSIBILITY](#accessibility)
+	* 5.1 [Checklist](#accessibility-checklist)
+	* 5.2 [ARIA](#aria)
 
 ## Document structure
 #### Structure your document properly
@@ -555,6 +557,7 @@ As Web Applications become increasingly powerful enabling users to improve their
 * **Understandable**: Can users understand the content? Can users understand the interface and is it consistent enough to avoid confusion?
 * **Robust**: Can the content be consumed by a wide variety of user agents (browsers)? Does it work with assistive technology?
 
+#### Accessibility Checklist
 **With that in mind, you should follow the below list while developing a website:**
 
 * Organize your content and keep it logical and consice (navigation, etc.).
