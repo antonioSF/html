@@ -560,7 +560,7 @@ As Web Applications become increasingly powerful enabling users to improve their
 #### Accessibility Checklist
 **With that in mind, you should follow the below list while developing a website:**
 
-* Organize your content and keep it logical and consice (navigation, etc.).
+* Organize your content and keep it logical and concise (navigation, etc.).
 
 * Implement [skip navigation](https://webaim.org/techniques/skipnav/) if necessary.
 
@@ -645,10 +645,65 @@ As Web Applications become increasingly powerful enabling users to improve their
 
 #### ARIA
 Accessible Rich Internet Applications (ARIA)  is a set of attributes that define ways to make Web content and Web applications. ARIA is a set of special accessibility attributes which can be added to any markup, but is especially suited to HTML. 
-* The ```role``` attribute defines a specific role for type of object (such as an article, alert, slider or a button).
+Adding an ARIA role overrides the native role semantics in the accessibility tree which is reported via the accessibility API, and therefore ARIA indirectly affects what is reported to a screen reader or other assistive technology. The ```role``` attribute defines a specific role for type of object (such as an article, alert, slider or a button).
+
+* If you can't use an HTML5 element, implement ARIA on the element so it becames accessible.
+
+* Do not change native semantics, unless you really have to.
+```html
+
+<!-- bad -->
+<h2 role="tab">tab</h2>
+
+<!-- good -->
+<div role="tab">tab</div>
+```
+
+* All interactive ARIA controls must be usable with the keyboard.
+```html
+
+<!--  this element must be focusable and the 
+	user has to be able to interact using the keyboard (tab/enter/space) -->
+<span role="button">Click me!</span>
+```
+
+* Do not use role="presentation" or aria-hidden="true" on a visible focusable element.
+
+```html
+
+<!-- bad -->
+<button role="presentation">press me</button>
+
+<!-- bad -->
+<button aria-hidden="true">press me</button>
+```
+
+* Use ```aria-labelledby``` and ```aria-describedby``` properly
+```html
+
+<!--- a tooltip example   -->
+<div aria-describedby="awesome-tooltip">text</div>
+     
+<div id="awesome-tooltip" role="tooltip">Assistive text tooltip</div>  
+
+<!--- an input with multiple references --> 
+<label id="l1" for="f3">label text</label>
+<input type="text" id="f3" aria-labelledby="l1 l2">
+<p>other content</p>
+<span tabindex="-1" id="l2">more label text</span>
+```
+
+* With this, as long as your project meets the outlined criteria, your users should have a positive experience accessing your content.
 
 ##### References
-> * [Create Amazing Forms | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/input/forms/)
+> * [ARIA - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+> * [Web Accessibility | Udacity](https://eu.udacity.com/course/web-accessibility--ud891)
+> * [Accessibility | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/accessibility/)
+> * [Web Accessibility | Udacity](https://eu.udacity.com/course/web-accessibility--ud891)
+> * [Using tabindex | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex)
+> * [WebAIM: "Skip Navigation" Links](https://webaim.org/techniques/skipnav/)
+> * [WebAIM: WebAIM's WCAG 2.0 Checklist - for HTML documents](https://webaim.org/standards/wcag/checklist)
+> * [Using ARIAm | W3C](https://w3c.github.io/using-aria/)
 
 ---
 
