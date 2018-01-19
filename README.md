@@ -21,7 +21,7 @@ Other Style Guides
 	* 1.6 [Semantic Content Elements](#semantic-content-sectioning-elements)
 2. [RESPONSIVE IMAGES](#responsive-images)
 3. [VIDEO & AUDIO](#video--audio)
-4. [WEB FORMS](#)
+4. [WEB FORMS](#web-forms)
 5. [ACCESSIBILITY](#)
 
 ## Document structure
@@ -527,10 +527,10 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 > * [HTML forms - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
 > * [```<form>``` - HTML | MDN](https://developer.mozilla.org/pt-PT/docs/Web/HTML/Element/form)
 > * [```<input>``` - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
-> * [Form data validation - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
-> * [Constraint validation - Web developer guides | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation)
-> * [Client-Side Form Validation with HTML5 — SitePoint](https://www.sitepoint.com/client-side-form-validation-html5/)
 > * [HTML5 Pattern](http://html5pattern.com/)
+> * [Form data validation - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
+> * [Client-Side Form Validation with HTML5 — SitePoint](https://www.sitepoint.com/client-side-form-validation-html5/)
+> * [Constraint validation - Web developer guides | MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation)
 
 ---
 
