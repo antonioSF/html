@@ -436,16 +436,17 @@ The creation of web forms has always been a complex task, particularly when you 
 Represents a document section that contains interactive controls to submit information to a web server. This element includes the global attributes: action, enctype, method, autocomplete, etc.
 
 ```html
-<!-- simple form will send a GET request and first name input is required -->
+<!-- Simple form will send a GET request and first name input is required -->
 <form action="" method="GET">
 	<label for="js-fname">First name</label>
 	<input type="text" id="js-fname" name="fname" required>
 </form>
 
-<!-- Form will send a POST request to data.php request and accepts files -->
+<!-- Form will send a POST request to data.php and accepts files -->
 <form action="data.php" method="POST" enctype="multipart/form-data">
 	<label for="js-file">Upload files:</label>
 	<input type="file" id="js-file" name="file" multiple>
+	
 	<button type="submit">Submit file</button>
 </form>
 ```
@@ -454,20 +455,19 @@ Represents a document section that contains interactive controls to submit infor
 Used to create interactive controls for web-based forms in order to accept data from the user.
 How an ```<input>``` works varies considerably depending on the value of its type attribute.
 
-* Always use labels on form inputs, and ensure they're visible when the field is in focus
+* Always use labels on form inputs, and ensure they're visible when the field is in focus.
 * Use placeholders to provide guidance about what you expect.
 * To help the browser auto-complete the form, use established name's for elements and include the autocomplete attribute.
 * Always validate inputs with the required attribute as well as the pattern, min, max, step, etc. 
 
 ```html
-<!-- label attribute "for" accepts the id of the targeted input.
-	Always use the name attribute on inputs as well as 
-	if its required and provide autocomplete parameters -->
+<!-- label attribute "for" accepts the id of the targeted input. -->
 <label for="js-name">Your Full Name:</label>
 <input type="text" id="js-name" name="name" required autocomplete="name">
-<!-- autocomplete attribute accepts different values as: 
-	off, on, email, username, etc. For more information on 
-	recommended input name and aucomplete attribute values refer to references --> 
+<!-- Always use the name attribute on inputs as well as 
+	if its required and provide autocomplete parameters. 
+	Autocomplete attribute accepts different values as: 
+	off, on, email, username, etc. --> 
 
 ```
 
