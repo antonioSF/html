@@ -33,6 +33,7 @@ Other Style Guides
 5. [ACCESSIBILITY](#accessibility)
 	* 5.1 [Checklist](#accessibility-checklist)
 	* 5.2 [ARIA](#aria)
+6. [BEST PRACTICES](#best-practices)
 
 ## Document structure
 #### Structure your document properly
@@ -708,6 +709,8 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 ---
 
 **[Back to top](#table-of-contents)**
+
+## Best Practices 
 
 ## Contributing
 
