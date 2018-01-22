@@ -715,7 +715,7 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 
 * Clean up HTML comments.
 
-* Minify HTML document.
+* Minify the HTML document.
 
 * Meta data is included and appropriate.
 
@@ -765,11 +765,17 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 
 * Website passed the [WSA Checklist](http://wsa.pt/checklist/).
 
+---
+
+**[Back to top](#table-of-contents)**
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
+---
+
+**[Back to top](#table-of-contents)**
 
 ## License
 
