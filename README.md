@@ -694,8 +694,6 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 <span tabindex="-1" id="l2">more label text</span>
 ```
 
-* With this, as long as your project meets the outlined criteria, your users should have a positive experience accessing your content.
-
 ##### References
 > * [ARIA - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
 > * [Web Accessibility | Udacity](https://eu.udacity.com/course/web-accessibility--ud891)
@@ -711,7 +709,7 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 **[Back to top](#table-of-contents)**
 
 ## Best Practices
-The goal is not to restrict you in any way, but to outline the coding standards and best practices in building HTML documents. This will allow, Developers and Designers, to deliver the best possible experience to our users.
+The goal is not to restrict you in any way, but to outline the coding standards and best practices in building HTML documents. With this, as long as your project meets the outlined criteria, your users should have a positive experience accessing your content.
 
 * Reduce the Number of DOM Elements.
 
