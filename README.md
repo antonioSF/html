@@ -7,7 +7,7 @@ WSA Internal HTML5 Coding Standards Guide
 
 Other Style Guides
 
-  - [CSS & Sass](https://github.com/antonioSF)
+  - [CSS & Sass](https://github.com/antonioSF/css)
   - [JavaScript](https://github.com/antonioSF)
   - [Environment / Scaffolding / Bundles / deployments](https://github.com/antonioSF)
 
