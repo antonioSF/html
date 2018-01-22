@@ -2,7 +2,7 @@
 
 WSA Internal HTML5 Coding Standards Guide
 
-> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic knowledge of Front-End technologies and Responsive Web Design.
+> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic or no knowledge of Front-End technologies and Responsive Web Design.
 
 
 Other Style Guides
@@ -710,21 +710,67 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 
 **[Back to top](#table-of-contents)**
 
-## Best Practices 
+## Best Practices
+* Reduce the Number of DOM Elements.
+
+* Clean up HTML comments.
+
+* Minify HTML document.
+
+* Meta data is included and appropriate.
+
+* Unless there's a very explicit reason for it, always make JavaScript and CSS External. 
+
+* Put Stylesheets at the top.
+
+* Put Scripts at the Bottom.
+
+* Minize the use of fonts and variants.
+
+* Webfont sizes don't exceed 2 MB (all variants included).
+
+* Minimize HTTP Requests (combine CSS files as well as JavaScript files): refer to [HTTP/2](https://http2.github.io/faq/).
+
+* Avoid Redirects.
+
+* The fastest and best optimized resource is the one not sent.
+
+* Aim at 1MB per page weight.
+
+* HTML5 Semantic Elements are used appropriately.
+
+* Website meets appropriate level of WCAG compliance.
+
+* Reduce to number of images.
+
+* Optimise and Compress images.
+
+* Responsive images have been implemented.
+
+* Colour contrast tested.
+
+* Forms have logical layout.
+
+* Associated label for all form controls.
+
+* Forms have apropriate client-side and real-time validation.
+
+* Always Test your website on several different browsers and devices.
+
+* Always Test your website with different networks (regular 3G, slow 3G, etc).
+
+* All pages need to be tested with the W3C validator.
+
+* Clean up your code with [DirtyMarkup Formatter](https://www.10bestdesign.com/dirtymarkup/).
+
+* Website passed the [WSA Checklist](http://wsa.pt/checklist/).
+
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
