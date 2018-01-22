@@ -2,7 +2,7 @@
 
 WSA Internal HTML5 Coding Standards Guide
 
-> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic or no knowledge of Front-End technologies and Responsive Web Design.
+> **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic or no knowledge of Front-End technologies and Responsive Web Design. It is meant to be an on-going collaboration project.
 
 
 Other Style Guides
@@ -711,6 +711,8 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 **[Back to top](#table-of-contents)**
 
 ## Best Practices
+The goal is not to restrict you in any way, but to outline the coding standards and best practices in building HTML documents. This will allow, Developers and Designers, to deliver the best possible experience to our users.
+
 * Reduce the Number of DOM Elements.
 
 * Clean up HTML comments.
