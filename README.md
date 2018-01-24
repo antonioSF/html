@@ -1,11 +1,11 @@
-# HTML5 Style Guide
+# HTML5 Guide
 
-WSA Internal HTML5 Coding Standards Guide
+WSA Internal HTML5 Guide
 
 > **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic or no knowledge of Front-End technologies and Responsive Web Design. It is meant to be an on-going collaboration project.
 
 
-Other Style Guides
+Other Guides
 
   - [CSS & Sass](https://github.com/antonioSF/css)
   - [JavaScript](https://github.com/antonioSF)
@@ -19,7 +19,7 @@ Other Style Guides
 	* [The ```<head>``` Element](#the-headheader-element)
 	* [The ```<body>``` Element](#the-body-element)
 	* [Semantic Content Elements](#semantic-content-sectioning-elements)
-2. [Responsive Elements](#responsive-images)
+2. [Responsive Images](#responsive-images)
 	* [The ```<picture>``` Element](#the-picture-element)
 	* [The ```<figure>``` Element](#the-figure-element)
 3. [Video & Audio](#video--audio)
