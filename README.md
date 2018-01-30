@@ -1,6 +1,6 @@
-# HTML5 Guide
+# HTML Guide
 
-WSA Internal HTML5 Guide
+WSA Internal HTML Guide
 
 > **Note**: The purpose of these guides are to provide coding standards and conventions for the majority of WSA projects. Some elements might not be required depending on the project specifications. It also assumes you have a basic or no knowledge of Front-End technologies and Responsive Web Design. It is meant to be an on-going collaboration project.
 
@@ -471,6 +471,7 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 <!-- Label attribute "for" accepts the id of the targeted input. -->
 <label for="js-name">Your Full Name:</label>
 <input type="text" id="js-name" name="name" placeholder="Marty Mcfly" required autocomplete="name">
+
 <!-- Always use the name attribute on inputs as well as 
 if its required and provide autocomplete parameters. 
 Autocomplete attribute accepts different values as: 
@@ -678,12 +679,12 @@ user has to be able to interact using the keyboard (tab/enter/space) -->
 * Use ```aria-labelledby``` and ```aria-describedby``` properly
 ```html
 
-<!--- a tooltip example   -->
+<!-- a tooltip example   -->
 <div aria-describedby="awesome-tooltip">text</div>
 
 <div id="awesome-tooltip" role="tooltip">Assistive text tooltip</div>  
 
-<!--- an input with multiple references --> 
+<!-- an input with multiple references --> 
 <label id="l1" for="f3">label text</label>
 <input type="text" id="f3" aria-labelledby="l1 l2">
 <p>other content</p>
