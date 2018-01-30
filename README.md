@@ -44,77 +44,76 @@ Use HTML5 semantic block level Elements to define areas of your website.
 <html lang="en">
 	<head>
 
-		<!-- Character encoding for the document -->
-		<meta charset="utf-8">
+    <!-- Character encoding for the document -->
+    <meta charset="utf-8">
 
-		<!-- Document Title -->
-		<title>Eg. Today's feed | The Feeder</title>
+    <!-- Document Title -->
+    <title>Eg. Today's feed | The Feeder</title>
+    
+    <!-- Document metadata / CSS external links / favicons -->
 
-		<!-- Document metadata / CSS external links / favicons -->
+  </head>
+  <body>
 
-	</head>
-	<body>
+    <!-- Document main header used across all website pages -->
+    <header>
+      <!-- Eg. logo of website here -->
 
-		<!-- Document main header used across all website pages -->
-		<header>
-			<!-- Eg. logo of website here -->
+      <nav>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contacts</a></li>
+      </nav>
+    </header>
 
-			<nav>
-				<li><a href="#">about</a></li>
-				<li><a href="#">services</a></li>
-				<li><a href="#">contacts</a></li>
-			</nav>
-		</header>
-		
-		<!-- Page main content -->
-		<main role="main">
+    <!-- Page main content -->
+    <main role="main">
 
-			<!-- A section contains a thematic grouping of content with a heading -->
-			<section>
-				<!-- Main page Heading -->
-				<h1>Eg. Your news feed aggregator page</h1>
-			</section>
-			
-			<!-- Another example of a section -->
-			<section>
-				<!-- The section always contains a heading -->
-				<h2>Eg. News Feed For today</h2>
+      <!-- A section contains a thematic grouping of content with a heading -->
+      <section>
+      <!-- Main page Heading -->
+        <h1>Eg. Your news feed aggregator page</h1>
+      </section>
 
-				<!-- An article containing related individual standalone pieces of content  -->
-				<article>
-					<h2>Eg. 10 things you didn't knew about HTML</h2>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</article>
+      <!-- Another example of a section -->
+      <section>
+        <!-- The section always contains a heading -->
+        <h2>Eg. News Feed For today</h2>
 
-				<!-- Another example of an article -->
-				<article>
-					<h2>Eg. 10 things you didn't knew about CSS</h2>
-					<p>Lorem ipsum dolor sit amet...</p>
-				</article>
+        <!-- An article containing related individual standalone pieces of content  -->
+        <article>
+          <h2>Eg. 10 things you didn't knew about HTML</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
 
-			</section>
+        <!-- Another example of an article -->
+        <article>
+          <h2>Eg. 10 things you didn't knew about CSS</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </article>
+      </section>
 
-			<!-- The aside is complementary/related to the document's content 
+      <!-- The aside is complementary/related to the document's content 
 			(it can be nested if directly related to the main content.
 			If not, leave it outside the main content) -->
-			<aside>
-				<h2>Eg. Upcaming News</h2>
-				<ul>
-					<li><a href="#">Eg. News 1</a></li>
-					<li><a href="#">Eg. News 2</a></li>
-					<li><a href="#">Eg. News 3</a></li>
-				</ul>
-			</aside>
+      <aside>
+        <h2>Eg. Upcaming News</h2>
+        
+        <ul>
+          <li><a href="#">Eg. News 1</a></li>
+          <li><a href="#">Eg. News 2</a></li>
+          <li><a href="#">Eg. News 3</a></li>
+        </ul>
+      </aside>
+    </main>
 
-		</main>
+    <!-- Document main footer used across all website pages -->
+    <footer>
+      <p>&copy; Copyright 2018. All rights reversed.</p>
+    </footer>
 
-		<!-- Document main footer used across all website pages -->
-		<footer>
-			<p>&copy; Copyright 2018. All rights reversed.</p>
-		</footer>
-
-		<!-- JavaScript files -->
-	</body>
+    <!-- JavaScript files -->
+  </body>
 </html>
 ```
 ---
