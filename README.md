@@ -42,8 +42,7 @@ Use HTML5 semantic block level Elements to define areas of your website.
 ```html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-
+  <head>
     <!-- Character encoding for the document -->
     <meta charset="utf-8">
 
@@ -68,10 +67,9 @@ Use HTML5 semantic block level Elements to define areas of your website.
 
     <!-- Page main content -->
     <main role="main">
-
       <!-- A section contains a thematic grouping of content with a heading -->
       <section>
-      <!-- Main page Heading -->
+        <!-- Main page Heading -->
         <h1>Eg. Your news feed aggregator page</h1>
       </section>
 
@@ -94,8 +92,8 @@ Use HTML5 semantic block level Elements to define areas of your website.
       </section>
 
       <!-- The aside is complementary/related to the document's content 
-			(it can be nested if directly related to the main content.
-			If not, leave it outside the main content) -->
+      (it can be nested if directly related to the main content.
+      If not, leave it outside the main content) -->
       <aside>
         <h2>Eg. Upcaming News</h2>
         
@@ -147,10 +145,10 @@ Represents the root (top-level Element) of an HTML document, so it is also refer
 ```html
 <!-- html with dir global attribute -->
 <html dir="rtl">
-	<head>
-	</head>
-	<body>
-	</body>
+  <head>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 > **Note**: This Element includes the global attributes.
@@ -168,31 +166,30 @@ Provides general information (metadata) about the Document.
 ```html
 <!-- <head> with title and required Document metadata -->
 <head>
-		<!-- Character encoding for the Document -->
-		<meta charset="utf-8">
+  <!-- Character encoding for the Document -->
+  <meta charset="utf-8">
 
-		<!-- Instruct IE to use its latest rendering engine -->
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Instruct IE to use its latest rendering engine -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-		<!-- Viewport for responsive -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		
-		<!-- Document Title -->
-		<title>Page title less than 55 characters</title>
-		
-		<!-- Description of the page -->
-		<meta name="description" content="description of the web page less than 150 characters">
+  <!-- Viewport for responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-		<!-- Favicon (put the favicons on the root of the folder) -->
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<!-- for IE -->
-		<!--[if IE]>
-			<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-		<![endif]-->
+  <!-- Document Title -->
+  <title>Page title less than 55 characters</title>
 
-		<!-- Link CSS -->
-		<link rel="stylesheet" href="/styles/main.css">
+  <!-- Description of the page -->
+  <meta name="description" content="description of the web page less than 150 characters">
 
+  <!-- Favicon (put the favicons on the root of the folder) -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <!-- for IE -->
+  <!--[if IE]>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <![endif]-->
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
 ```
 > **Note**: This Element includes the global attributes.
@@ -209,13 +206,13 @@ Represents the content of an HTML document. There can be only one ```<body>``` E
 ```html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Document Title</title>
-	</head>
-	<body>
-		<p>This is a paragraph.</p>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Document Title</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 > **Note**: Avoid adding complex styling to the body Element
@@ -233,80 +230,80 @@ Content sectioning elements allow you to organize the document content into logi
 Represents introductory content, typically a logo and a nav menu, or a title. Sometimes you may have more than one header. At the beginnig of an article or section, for example, if there's a case for it.
 ```html
 <header>
-	<h2>Introductory content</h2>
+  <h2>Introductory content</h2>
 </header>
 ```
 ###### The ```<nav>``` Element
 Represents a section of a page whose purpose is to provide navigation links like a menu.
 ```html
 <nav>
-	<ul>
-		<li><a href="#">link 1</a></li>
-		<li><a href="#">link 2</a></li>
-		<li><a href="#">link 3</a></li>
-	</ul>
+  <ul>
+    <li><a href="#">link 1</a></li>
+    <li><a href="#">link 2</a></li>
+    <li><a href="#">link 3</a></li>
+  </ul>
 </nav>
 ```
 ###### The ```<h1>–<h6>``` Elements
 Represents six levels of section headings. ```<h1>``` is the highest section level and ```<h6>``` is the lowest. If several are used together, they can be grouped into an ```<hgroup>```
 ```html
 <hgroup>
-	<h2>First title</h2>
-	<h3>Subtitle</h3>
-	<h4>another subtitle</h4>
+  <h2>First title</h2>
+  <h3>Subtitle</h3>
+  <h4>another subtitle</h4>
 </hgroup>
 ```
 ###### The ```<main>``` Element
 Represents content unique to the document. Use it only once per page.
 ```html
 <main role="main">
-	<p>the main content</p>
+  <p>the main content</p>
 </main>
 ```
 ###### The ```<section>``` Element
 Represents a standalone section — which doesn't have a more specific semantic element to represent it.
 ```html
 <section>
-	<h2>A Standalone section</h2>
+  <h2>A Standalone section</h2>
 </section>
 ```
 ###### The ```<article>``` Element
 Represents an independent self-contained composition in a document (Eg. blog post, etc...).
 ```html
 <article>
-	<h2>Article title</h2>
-	<p>Article content</p>
+  <h2>Article title</h2>
+  <p>Article content</p>
 </article>
 ```
 ###### The ```<aside>``` Element
 Represents represents content indirectly related to the main content.
 ```html
 <aside>
-	<h2>Aside title</h2>
+  <h2>Aside title</h2>
 </aside>
 ```
 ###### The ```<footer>``` Element
 Represents a footer for its nearest sectioning content or sectioning root element. Tipically, it will be present at the end of the document containing contact info, copyrights, etc. Sometimes you may have more than one footer. At the end of an article, for example, if there's a case for it.
 ```html
 <footer>
-	<p>&copy; 2018. All rights reserved.</p>
+  <p>&copy; 2018. All rights reserved.</p>
 </footer>
 ```
 ###### The ```<address>``` Element
 Provides contact information for a person or people, or for an organization.
 ```html
 <address>
-	<p>Here you can put contact info eg. <a href="mailto:info@example.com">info@example.com</a></p>
+  <p>Here you can put contact info eg. <a href="mailto:info@example.com">info@example.com</a></p>
 </address>
 ```
 > **Note**: The ```<div>``` Element is a  non-semantic element. It has no effect on the content or layout until styled using CSS. Use it when you can't find an ideal semantic element to group some items together or wrap some content.
 
 ```html
 <section>
-	<!-- use the div element for styling purposes -->
-	<div class="wrapper">
-		<p>This is a paragraph.</p>
-	</div>
+  <!-- use the div element for styling purposes -->
+  <div class="wrapper">
+    <p>This is a paragraph.</p>
+  </div>
 </section>
 ```
 ##### References
@@ -335,9 +332,9 @@ Serves as a container for zero or more ```<source>``` elements and one ```<img>`
 ```html
 <!-- use the picture element -->
 <picture>
-	<source media="(min-width: 64rem)" srcset="images/example-large-screens1x.jpg, images/example-large-screens2x.jpg 2x">
-	<source media="(min-width: 40rem)" srcset="images/example-medium-screens1x.jpg, images/example-medium-screens2x.jpg 2x">
-	<img src="images/example-small-screens1x.jpg" srcset="images/example-small-screens2x.jpg 2x" alt="Responsive Image Example">
+  <source media="(min-width: 64rem)" srcset="images/example-large-screens1x.jpg, images/example-large-screens2x.jpg 2x">
+  <source media="(min-width: 40rem)" srcset="images/example-medium-screens1x.jpg, images/example-medium-screens2x.jpg 2x">
+  <img src="images/example-small-screens1x.jpg" srcset="images/example-small-screens2x.jpg 2x" alt="Responsive Image Example">
 </picture>
 
 <!-- art direction. Give diferent images with diferent sizes based on browser dimensions -->
@@ -349,14 +346,14 @@ Represents self-contained content, frequently with a caption (```<figcaption>```
 ```html
 <!-- using the figure element -->
 <figure>
-	<picture>
-		<source ...>
-		<source ...>
-		<source ...>
-		<img...>
-	</picture>
+  <picture>
+    <source ...>
+    <source ...>
+    <source ...>
+    <img...>
+  </picture>
 
-	<figcaption>A Caption</figcaption>
+  <figcaption>A Caption</figcaption>
 </figure>
 ```
 
@@ -383,19 +380,19 @@ It serves to embed video content in a document. This element supports the global
 ```html
 <!-- simple video with poster image -->
 <video src="video.webm" autoplay poster="posterimage.jpg">
-Sorry, your browser doesn't support embedded video...
+  Sorry, your browser doesn't support embedded video...
 </video>
 
 <!-- Video with different sources for the media format. 
-	This allows for supported fallbacks with different browsers -->
+  This allows for supported fallbacks with different browsers -->
 <video controls preload="metadata">
-	<source src="video.mp4" type="video/mp4">
-	<source src="video.webm" type="video/webm">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
 
-	<!-- with subtitles -->
-	<track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
-  	<track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
-	<p>Sorry, your browser doesn't support embedded video...</p>
+  <!-- with subtitles -->
+  <track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
+  <track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
+  <p>Sorry, your browser doesn't support embedded video...</p>
 </video>
 ```
 > **Note**: Use the source element to specify the different media format. The browser will choose the most suitable one.
@@ -411,9 +408,9 @@ Used to embed sound content in documents. This element supports the global attri
 
 <!-- Audio with source -->
 <audio controls preload="metadata">
-	<source src="audio.mp3" type="video/mp3">
-	<source src="audio.ogg" type="video/ogg; codecs=vorbis">
-	Your browser does not support the <code>audio</code> element.
+  <source src="audio.mp3" type="video/mp3">
+  <source src="audio.ogg" type="video/ogg; codecs=vorbis">
+  Your browser does not support the <code>audio</code> element.
 </audio>
 ```
 
@@ -448,16 +445,16 @@ Represents a document section that contains interactive controls to submit infor
 ```html
 <!-- Simple form will send a GET request and first name input is required -->
 <form action="" method="GET">
-	<label for="js-fname">First name</label>
-	<input type="text" id="js-fname" name="fname" required>
+  <label for="js-fname">First name</label>
+  <input type="text" id="js-fname" name="fname" required>
 </form>
 
 <!-- Form will send a POST request to data.php and accepts files -->
 <form action="data.php" method="POST" enctype="multipart/form-data">
-	<label for="js-file">Upload files:</label>
-	<input type="file" id="js-file" name="file" multiple>
-	
-	<button type="submit">Submit file</button>
+  <label for="js-file">Upload files:</label>
+  <input type="file" id="js-file" name="file" multiple>
+
+  <button type="submit">Submit file</button>
 </form>
 ```
 
@@ -475,9 +472,9 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 <label for="js-name">Your Full Name:</label>
 <input type="text" id="js-name" name="name" placeholder="Marty Mcfly" required autocomplete="name">
 <!-- Always use the name attribute on inputs as well as 
-	if its required and provide autocomplete parameters. 
-	Autocomplete attribute accepts different values as: 
-	off, on, email, username, etc. -->
+if its required and provide autocomplete parameters. 
+Autocomplete attribute accepts different values as: 
+off, on, email, username, etc. -->
 
 <!-- Always use the right type attribute for the required data -->
 <label for="js-email">Email:</label>
@@ -491,11 +488,11 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 <label for="js-city">City:</label>
 <input type="text" id="js-city" type="text" list="cities" name="city" placeholder="Lisbon">
 <datalist id="cities">
-	<option value="Lisbon"></option>
-	<option value="Oporto"></option>
-	<option value="New York"></option>
-	<option value="London"></option>
-	<option value="Sydney"></option>
+  <option value="Lisbon"></option>
+  <option value="Oporto"></option>
+  <option value="New York"></option>
+  <option value="London"></option>
+  <option value="Sydney"></option>
 </datalist>
 
 <!-- Use the pattern attribute (regular expressions) to validate input  -->
@@ -663,7 +660,7 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 ```html
 
 <!--  this element must be focusable and the 
-	user has to be able to interact using the keyboard (tab/enter/space) -->
+user has to be able to interact using the keyboard (tab/enter/space) -->
 <span role="button">Click me!</span>
 ```
 
@@ -683,7 +680,7 @@ Adding an ARIA role overrides the native role semantics in the accessibility tre
 
 <!--- a tooltip example   -->
 <div aria-describedby="awesome-tooltip">text</div>
-     
+
 <div id="awesome-tooltip" role="tooltip">Assistive text tooltip</div>  
 
 <!--- an input with multiple references --> 
@@ -768,14 +765,10 @@ The goal is not to restrict you in any way, but to outline the coding standards 
 
 **[Back to top](#table-of-contents)**
 
-## Contributing
+## License
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/antonioSF/html/blob/master/LICENSE) file for details
 
 ---
 
 **[Back to top](#table-of-contents)**
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/antonioSF/html/blob/master/LICENSE) file for details
