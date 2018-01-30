@@ -482,7 +482,7 @@ How an ```<input>``` works varies considerably depending on the value of its typ
 
 <!-- Always use the right type attribute for the required data -->
 <label for="js-email">Email:</label>
-<input type="email" id="js-email" name="email" placeholder="marty@gmail.com" autocomplete="email" required
+<input type="email" id="js-email" name="email" placeholder="marty@gmail.com" autocomplete="email" required>
 
 <!-- Validate inputs with proper attributes -->
 <label for="js-tel">Telephone:</label>
